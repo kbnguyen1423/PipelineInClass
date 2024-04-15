@@ -56,7 +56,7 @@ jobs:
     - name: Setup VSTest.exe
       uses: Malcolmnixon/Setup-VSTest@v4
 
-      
+
     - name: RunTests
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: echo Test
+      run: VSTest.Console.exe x64\Release\UnitTest1.dll
