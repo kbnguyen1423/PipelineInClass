@@ -49,7 +49,14 @@ jobs:
     needs: [build, lint]
     runs-on: windows-latest
 
+    
+
     steps:
+
+    - name: Setup VSTest.exe
+      uses: Malcolmnixon/Setup-VSTest@v4
+
+      
     - name: RunTests
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: echo Test
