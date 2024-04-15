@@ -61,11 +61,7 @@ jobs:
     steps:
     - name: UploadBinaries
       uses: actions/upload-artifact@v3  
-      with:
-          name: my-artifact
-          path: path/to/artifact/
-          if-no-files-found: error
-
+  
 
     - name: Setup VSTest.exe
       uses: Malcolmnixon/Setup-VSTest@v4
